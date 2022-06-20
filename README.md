@@ -12,8 +12,14 @@ learn golang repository, Simple REST API using Gin Framework
 7. install gin “go get github.com/gin-gonic/gin”
 
 routes:
+```
 get “books” -> curl localhost:8081/books
+
 get “books/:id” -> curl localhost:8081/books/2
+
 post “books” -> curl localhost:8081/books --include --header "Content-Type: application/json" -d @body.json --request "POST"
+
 post “checkout” -> curl localhost:8081/checkout?id=2 —request “PATCH”
+
 post “return” -> curl localhost:8081/return?id=2 —request “PATCH”
+```
